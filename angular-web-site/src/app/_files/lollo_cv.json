@@ -1,0 +1,27 @@
+{
+  "propic_path":"path_per_foto_profilo.png",
+  "name":"lollo",
+  "surname":"sca",
+  "github":"https://github.com/",
+  "prev_works":
+    [
+      {"job":"portiere",
+      "for":"crotone calcio",
+      "link":"https://www.fccrotone.it/"},
+      {"job":"portinaio",
+      "for":"casa scalise"}
+    ],
+  "tools":[
+    {"name":"angular",
+      "logo":"img_1.png",
+      "link":"https://angular.io"},
+    {"name":"typescript",
+      "logo":"img_2.png",
+      "link":"buh"},
+    {"name":"python",
+      "logo":"img_3.png",
+      "link":"2321412"}
+  ]
+
+
+}
