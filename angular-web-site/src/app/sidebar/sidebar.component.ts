@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-  status:string="close";
+  status:string = "close";
+
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +17,10 @@ export class SidebarComponent implements OnInit {
   openCloseEvent():void{
     if(this.status=="close"){
       this.status="open";
+      console.log(this.status);
+    } else if(this.status=="open"){
+      this.status="close";
+      console.log(this.status);
     }
   }
 

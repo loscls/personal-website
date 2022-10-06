@@ -1,2 +1,9 @@
 <div class="sidebar" [ngClass]="status" (click)="openCloseEvent()">
+  <button>Immagine</button>
+  <div class="sidebarContent" *ngIf="status == 'open' " > <!-- da riguardare -->
+    <li>
+      <h3>NOME</h3>
+      <h3>COGNOME</h3>
+  </li>
+  </div>
 <div>
