@@ -25,6 +25,9 @@ export class SidebarComponent implements OnInit {
       console.log(this.status);
     }
   }
+
+  //se volessi passare parametri potrei fare come mostrato, creo un dizionario "{}" e gli passo tutti i parametri che voglio
+  //in questo caso passo .name quindi potrei prendermi dall'altra parte il nome del componente cliccato
   sendClick():void{
     let toSend:any={};
     toSend.name="sidebar"
