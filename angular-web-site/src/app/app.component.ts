@@ -16,9 +16,11 @@ export class AppComponent {
     //facendo getClickEvent.subscribe richiedo il click e il parametro che mi viene passato, in questo caso value ma che non uso
     //perché gestisco solo un contatore
     this.SharedService.getClickEvent().subscribe((value)=>{
+      console.log(value.name);
       this.countClick++;
     })
   }
+
   title = 'angular-web-site';
   cv:any = lollo_cv;
   stri: String = JSON.stringify(this.cv);

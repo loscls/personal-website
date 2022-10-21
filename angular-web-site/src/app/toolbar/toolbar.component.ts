@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../utils/shared.service';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private SharedService:SharedService) { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    let toSend:any={};
+    toSend.name = "toolbar";
+    console.log("lo invio");
+    this.SharedService.sendClickEvent(toSend);
   }
 
 }

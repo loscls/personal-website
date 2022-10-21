@@ -7,16 +7,26 @@ import { SharedService } from '../utils/shared.service';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+
   status:string = "close";
 
-  constructor(private SharedService:SharedService) { }
+
+  constructor(private SharedService:SharedService) {
+    this.SharedService.getClickEvent().subscribe((value)=>{
+      console.log(value.name);
+      this.openCloseEvent();
+    })
+
+   }
+
 
   ngOnInit(): void {
   }
 
   //semplicemente cambio la variabile dell'ngclass quindi assegno la classe open di cui ho definito il css
   openCloseEvent():void{
-    this.sendClick();
+    console.log("arrivo qua")
+    // this.sendClick();
     if(this.status=="close"){
       this.status="open";
       console.log(this.status);
@@ -33,5 +43,7 @@ export class SidebarComponent implements OnInit {
     toSend.name="sidebar"
     this.SharedService.sendClickEvent(toSend);
   }
+
+
 
 }
