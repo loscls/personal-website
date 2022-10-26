@@ -16,8 +16,7 @@ export class ToolbarComponent implements OnInit {
   onClick() {
     let toSend:any={};
     toSend.name = "toolbar";
-    console.log("lo invio");
-    this.SharedService.sendClickEvent(toSend);
+    this.SharedService.sendClickEventToolbar(toSend);
   }
 
 }

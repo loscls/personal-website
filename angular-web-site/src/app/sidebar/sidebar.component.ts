@@ -12,21 +12,20 @@ export class SidebarComponent implements OnInit {
 
 
   constructor(private SharedService:SharedService) {
-    this.SharedService.getClickEvent().subscribe((value)=>{
-      console.log(value.name);
+
+    this.SharedService.getClickEventSidebar().subscribe((value)=>{
+      console.log("il click arriva da:" +value.name);
       this.openCloseEvent();
     })
 
-   }
-
+  }
 
   ngOnInit(): void {
   }
 
+
   //semplicemente cambio la variabile dell'ngclass quindi assegno la classe open di cui ho definito il css
   openCloseEvent():void{
-    console.log("arrivo qua")
-    // this.sendClick();
     if(this.status=="close"){
       this.status="open";
       console.log(this.status);
@@ -38,10 +37,10 @@ export class SidebarComponent implements OnInit {
 
   //se volessi passare parametri potrei fare come mostrato, creo un dizionario "{}" e gli passo tutti i parametri che voglio
   //in questo caso passo .name quindi potrei prendermi dall'altra parte il nome del componente cliccato
-  sendClick():void{
+  onClick():void{
     let toSend:any={};
     toSend.name="sidebar"
-    this.SharedService.sendClickEvent(toSend);
+    this.SharedService.sendClickEventSidebar(toSend);
   }
 
 

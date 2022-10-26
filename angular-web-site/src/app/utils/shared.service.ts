@@ -11,15 +11,33 @@ export class SharedService {
   private subject=new Subject<any>();
 
   //i componenti che lo importano possono richiamare queste due funzioni:
+  //send & click event
 
-  //questa triggera il click e puoi passare parametri
+  //GENERAL
   sendClickEvent(params:any){
-
     this.subject.next(params);
   }
-
-  //questa può leggere i parametri passati come si può vedere nell classe app.component.ts
   getClickEvent():Observable<any>{
     return this.subject.asObservable();
   }
+
+  //TOOLBAR
+  //questa triggera il click e puoi passare parametri
+  sendClickEventToolbar(params:any){
+    this.subject.next(params);
+  }
+  //questa può leggere i parametri passati come si può vedere nell classe app.component.ts
+  getClickEventToolbar():Observable<any>{
+    return this.subject.asObservable();
+  }
+
+  //SIDEBAR
+  sendClickEventSidebar(params:any){
+    this.subject.next(params);
+  }
+  getClickEventSidebar():Observable<any>{
+    return this.subject.asObservable();
+  }
 }
+
+

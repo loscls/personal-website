@@ -1,5 +1,5 @@
-<div class="sidebar" [ngClass]="status" (click)="openCloseEvent()">
-  <div class="sidebarContent" *ngIf="status == 'open' " > <!-- da riguardare -->
+ <div class="sidebar" [ngClass]="status" (click)="onClick()" >
+  <div class="sidebarContent" *ngIf="status == 'open' "> <!-- da riguardare -->
     <img
     width="40"
     alt="Angular Logo"
