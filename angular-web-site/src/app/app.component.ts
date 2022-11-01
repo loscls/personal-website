@@ -17,7 +17,6 @@ export class AppComponent {
     //perché gestisco solo un contatore
     this.SharedService.getClickEvent().subscribe((value)=>{
       if (value.name == "sidebar") {
-        console.log("+1");
         this.countClick++;
       }
     })

@@ -6,7 +6,7 @@
   top: 0;
   width: 0rem;
   height: 100vh;
-  box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
+  box-shadow: 0.063rem 0 1.25rem 0 #33373d;
   /* transform-origin: 0% 0% 100% 0% 0%;serve per far partire la transform da una posizione fissa e non dal centro
   quindi in questo caso con left=0% non si espanderà cliccandoci anche sulla sinistra andando fuori dallo schermo  */
 }
@@ -15,8 +15,25 @@
   width: 20rem;
 }
 
-.sidebarContent {
+.sidebarHead {
   display: flex;
   align-items: center;
+  padding: 0.938rem 0.938rem 0 0.938rem;
+  width: 100%;
+}
+
+.btnClose {
+  margin-left: auto;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0.313rem;
+  border-radius: 10rem;
+  border: none;
+  cursor: pointer;
 }
 
