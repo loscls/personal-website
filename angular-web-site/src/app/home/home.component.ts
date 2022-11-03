@@ -7,7 +7,7 @@ import lollo_cv from '../_files/lollo_cv.json';
 })
 export class HomeComponent implements OnInit {
   //@Input() datiCv: any; togliere ciò perché non li stiamo passando da padre ma leggendo da json
-  mostra:boolean=true;
+  mostraTITOLO:boolean=false;
   title = 'angular-web-site';
   datiCv:any = lollo_cv;
   stri: String = JSON.stringify(this.datiCv);

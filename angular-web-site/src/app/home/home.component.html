@@ -68,7 +68,7 @@
 
 </style>
 
-<div *ngIf="mostra else loading">homework!</div>
+<div *ngIf="mostraTITOLO else mostraCV">homework!</div>
 <div>
   <h2>
     Il mio cv
@@ -83,7 +83,7 @@
       <h3 *ngFor="let tool of datiCv.tools">{{tool.name}} {{tool.logo}}</h3>
    </li>
 </div>
-<ng-template #loading class="content" [datiCv]="cv">
+<ng-template #mostraCV class="content" [datiCv]="cv">
   <h2>
       Il mio cv
   </h2>
