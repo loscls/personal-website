@@ -6,16 +6,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ToolbarComponent,
-    SidebarComponent,
-    ExperienceComponent,
-  ],
+    SidebarComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule

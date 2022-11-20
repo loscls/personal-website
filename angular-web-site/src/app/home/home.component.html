@@ -68,8 +68,7 @@
 
 </style>
 
-<div *ngIf="mostraTITOLO else mostraCV">homework!</div>
-<div>
+<div class="content">
   <h2>
     Il mio cv
 </h2>
@@ -83,7 +82,8 @@
       <h3 *ngFor="let tool of datiCv.tools">{{tool.name}} {{tool.logo}}</h3>
    </li>
 </div>
-<ng-template #mostraCV class="content" [datiCv]="cv">
+
+<!-- <ng-template #mostraCV class="content" [datiCv]="cv">
   <h2>
       Il mio cv
   </h2>
@@ -96,7 +96,7 @@
         <h3 style="color: goldenrod;margin-top: 2em;"> i miei strumenti</h3>
         <h3 *ngFor="let tool of datiCv.tools">{{tool.name}} {{tool.logo}}</h3>
      </li>
-</ng-template>
+</ng-template> -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

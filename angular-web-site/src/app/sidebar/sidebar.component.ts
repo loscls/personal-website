@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,Input, OnInit } from '@angular/core';
 import { SharedService } from '../utils/shared.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { SharedService } from '../utils/shared.service';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+  @Input() datiCv: any;
 
   status:string = "close";
 

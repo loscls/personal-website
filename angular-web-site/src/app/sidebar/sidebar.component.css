@@ -1,5 +1,5 @@
 .sidebar {
-  background: #263238;
+  background: #434748;
   transition: all .5s ease;
   position: fixed;
   z-index: 1;
@@ -7,8 +7,6 @@
   width: 0rem;
   height: 100vh;
   box-shadow: 0.063rem 0 1.25rem 0 #33373d;
-  /* transform-origin: 0% 0% 100% 0% 0%;serve per far partire la transform da una posizione fissa e non dal centro
-  quindi in questo caso con left=0% non si espanderà cliccandoci anche sulla sinistra andando fuori dallo schermo  */
 }
 
 .open {
@@ -37,3 +35,18 @@
   cursor: pointer;
 }
 
+.sidebarContent {
+  position: relative;
+  align-content: center;
+  text-align: center;
+}
+
+.propic {
+  border-radius: 11rem;
+  height: 10rem;
+  margin-bottom: 10px;
+}
+
+.dati {
+  color: white;
+}

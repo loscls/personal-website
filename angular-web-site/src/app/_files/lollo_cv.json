@@ -2,7 +2,9 @@
   "propic_path":"path_per_foto_profilo.png",
   "name":"ilnomedelmiocane",
   "surname":"sca",
+  "birth_date":"17/07/1993",
   "tel":"0432895023",
+  "email":"pipopipo@popipopi.com",
   "github":"https://github.com/",
   "prev_works":
     [
@@ -23,6 +25,4 @@
       "logo":"img_3.png",
       "link":"2321412"}
   ]
-
-
 }

@@ -1,5 +1,5 @@
  <div class="sidebar" [ngClass]="status">
-  <div class="sidebarHead" *ngIf="status == 'open'"> <!-- da riguardare -->
+  <div class="sidebarHead" *ngIf="status == 'open'">
     <img class="logo"
     width="40"
     alt="Angular Logo"
@@ -8,11 +8,20 @@
     <Button class="btnClose" *ngIf="status == 'open'" (click)="onClick()">✖</Button>
   </div>
 
+
   <div class="sidebarContent" *ngIf="status == 'open'">
-    <ul>
-      <li><a routerLink="" (click)="onClick()">Home</a></li>
-      <li><a routerLink="experience" (click)="onClick()">Work</a></li>
-    </ul>
+    <img class="propic" *ngIf="status == 'open'" src="https://t4.ftcdn.net/jpg/00/64/67/63/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg">
+
+    <h3 class="dati">{{datiCv.name}}</h3>
+    <h3 class="dati">{{datiCv.surname}}</h3>
+
+    <hr style="margin: 10px 30px 10px 30px;">
+
+    <p class="dati" style="margin-bottom: 10px;">{{datiCv.birth_date}}</p> <!-- aggiungere bottoni -->
+    <p class="dati" style="margin-bottom: 10px;">{{datiCv.email}}</p>
+    <p class="dati" style="margin-bottom: 10px;">{{datiCv.github}}</p>
+
+    <hr style="margin: 10px 30px 10px 30px;">
 
   </div>
 <div>
