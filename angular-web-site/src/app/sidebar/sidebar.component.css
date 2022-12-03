@@ -45,8 +45,21 @@
   border-radius: 11rem;
   height: 10rem;
   margin-bottom: 10px;
+  animation-duration: 0.5s;
+  animation-name: hello_propic;
 }
 
 .dati {
   color: white;
+}
+
+@keyframes hello_propic{
+  0%{
+    width: 0;
+
+  }
+
+  100%{
+    width: auto;
+  }
 }
