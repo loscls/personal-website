@@ -10,7 +10,7 @@
 
 
   <div class="sidebarContent" *ngIf="status == 'open'">
-    <img class="propic" *ngIf="status == 'open'" src="assets/img/los.jpg">
+    <img class="propic" *ngIf="status == 'open'" src={{datiCv.propic_path}}>
 
     <h3 class="dati">{{datiCv.name}}</h3>
     <h3 class="dati">{{datiCv.surname}}</h3>

@@ -6,6 +6,7 @@ import { SharedService } from '../utils/shared.service';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
+
 export class SidebarComponent implements OnInit {
   @Input() datiCv: any;
 
