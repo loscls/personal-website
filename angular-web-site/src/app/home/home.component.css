@@ -23,13 +23,14 @@ h6 {
 }
 
 .card {
+  width: auto;
   display: flex;
   flex-direction: column;
   border-radius: .5rem;
   background-color: #c4c9ca;
   margin: 1.25rem;
   box-shadow: 0 .10rem .5rem;
-  padding: 1rem 1.5rem;
+  /* padding: 1rem 1.5rem; */
   text-align: left;
 }
 

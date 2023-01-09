@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SharedService } from '../utils/shared.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { SharedService } from '../utils/shared.service';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+  @Input() datiCv: any;
 
   constructor(private SharedService:SharedService) { }
 

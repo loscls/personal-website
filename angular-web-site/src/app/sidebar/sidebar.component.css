@@ -1,3 +1,23 @@
+.blur{
+  width: 0rem;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  min-height: 100vh;
+  background: rgba(76, 73, 73, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  transition: all .8s ease;
+
+  animation-name: bg_blur;
+  animation-duration: 0.5s;
+}
+
+.on {
+  width: 100%;
+}
+
 .sidebar {
   background: #434748;
   transition: all .5s ease;
@@ -6,11 +26,12 @@
   top: 0;
   width: 0rem;
   height: 100vh;
+  border-radius: 0 .5rem .5rem 0;
   box-shadow: 0.063rem 0 1.25rem 0 #33373d;
 }
 
 .open {
-  width: 20rem;
+  width: 25rem;
 }
 
 .sidebarHead {
@@ -60,6 +81,17 @@
   }
 
   100%{
-    width: 50%;
+    width: 40%;
+  }
+}
+
+@keyframes bg_blur{
+  0%{
+    width: 0;
+
+  }
+
+  100%{
+    width: 100%;
   }
 }

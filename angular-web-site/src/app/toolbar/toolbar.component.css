@@ -26,5 +26,6 @@
 
 .toolbar #github-logo:hover,
 .toolbar #angularLogo:hover {
+  background-color: blue; /* test */
   opacity: 0.8;
 }

@@ -7,12 +7,3 @@
   justify-content: center;
   display: flex;
 }
-.background{
-  width: 100%;
-  background-color: rgba(128, 128, 128, 0.76);
-  height: 100%;
-  position: absolute;
-  z-index: 1;
-  min-height: 100vh;
-
-}

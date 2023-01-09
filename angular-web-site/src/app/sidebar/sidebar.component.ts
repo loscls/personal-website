@@ -11,6 +11,7 @@ export class SidebarComponent implements OnInit {
   @Input() datiCv: any;
 
   status:string = "close";
+  blur:string = "off"
 
 
   constructor(private SharedService:SharedService) {
@@ -30,9 +31,11 @@ export class SidebarComponent implements OnInit {
   openCloseEvent():void{
     if(this.status=="close"){
       this.status="open";
+      this.blur="on";
       console.log(this.status);
     } else if(this.status=="open"){
       this.status="close";
+      this.blur="off"
       console.log(this.status);
     }
   }
