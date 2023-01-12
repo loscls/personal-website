@@ -1,9 +1,13 @@
-<app-toolbar [datiCv]="cv"></app-toolbar>
+<div class="background">
 
-<app-sidebar [datiCv]="cv"></app-sidebar>
+  <app-sidebar [datiCv]="cv"></app-sidebar>
 
-<app-home [datiCv]="cv"></app-home>
+  <app-toolbar [datiCv]="cv"></app-toolbar>
 
-<router-outlet></router-outlet>
+  <app-home [datiCv]="cv"></app-home>
 
-<h1 class="prova">numero di click sulla sidebar: {{countClick}}</h1> <!--DA ELIMINARE-->
+  <router-outlet></router-outlet>
+
+</div>
+
+<!-- <h1 class="prova">numero di click sulla sidebar: {{countClick}}</h1> !!!!!!!DA ELIMINARE!!!!!!! -->

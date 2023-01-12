@@ -1,25 +1,64 @@
-<div class="content">
-  <div class="card">
-    <div class="card-head">Lorem Ipsum 1</div>
-    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio dui, ultrices non auctor non, vestibulum vitae diam. Aenean aliquam, ante tincidunt mattis eleifend, urna elit lobortis quam, id vestibulum nisi leo a nunc. Etiam et imperdiet massa. Aliquam in ante a ante ultrices imperdiet. Nullam vulputate rhoncus tellus, vitae varius quam volutpat quis. Cras pellentesque fringilla enim.</div>
-  </div>
+<div class="home">
 
-  <div class="card">
-    <div class="card-head">Lorem Ipsum 2</div>
-    <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio dui, ultrices non auctor non, vestibulum vitae diam. Aenean aliquam, ante tincidunt mattis eleifend, urna elit lobortis quam, id vestibulum nisi leo a nunc. Etiam et imperdiet massa. Aliquam in ante a ante ultrices imperdiet. Nullam vulputate rhoncus tellus, vitae varius quam volutpat quis. Cras pellentesque fringilla enim.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio dui, ultrices non auctor non, vestibulum vitae diam. Aenean aliquam, ante tincidunt mattis eleifend, urna elit lobortis quam, id vestibulum nisi leo a nunc. Etiam et imperdiet massa. Aliquam in ante a ante ultrices imperdiet. Nullam vulputate rhoncus tellus, vitae varius quam volutpat quis. Cras pellentesque fringilla enim.</div>
+  <!-- PROVA -->
+  <div class="intro">
+    <h1 class="intro_h1">
+      Hi, questo è il titolo della pagina
+      <br>
+      Questo pure
+      <br>
+    </h1>
   </div>
+  <!-- FINE PROVA -->
 
-  <h2>
-    Il mio cv
-</h2>
-   <li>
-      <h3>{{datiCv.propic_path}}</h3>
-      <h3>{{datiCv.name}}</h3>
-      <h3>{{datiCv.surname}}</h3>
-      <h3 style="color: goldenrod;margin-top: 2em;">i miei lavori</h3>
-      <h3 *ngFor="let work of datiCv.prev_works">{{work.job}} {{work.for}}</h3>
-      <h3 style="color: goldenrod;margin-top: 2em;"> i miei strumenti</h3>
-      <h3 *ngFor="let tool of datiCv.tools">{{tool.name}} {{tool.logo}}</h3>
-   </li>
+
+  <div class="content">
+
+    <!-- INIZIO CARD -->
+    <div class="card">
+      <div class="card-head">Exprerience</div>
+      <div class="card-body" style="text-align: center;">
+       <h3 style="color: goldenrod;margin-top: 2em;">i miei lavori</h3>
+        <h3 *ngFor="let work of datiCv.prev_works">{{work.job}} {{work.for}}</h3>
+        <h3 style="color: goldenrod;margin-top: 2em;"> i miei strumenti</h3>
+        <h3 *ngFor="let tool of datiCv.tools">{{tool.name}} {{tool.logo}}</h3>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">Edication</div>
+      <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio dui, ultrices non
+        auctor non, vestibulum vitae diam. Aenean aliquam, ante tincidunt mattis eleifend, urna elit lobortis quam, id
+        vestibulum nisi leo a nunc. Etiam et imperdiet massa. Aliquam in ante a ante ultrices imperdiet. Nullam
+        vulputate rhoncus tellus, vitae varius quam volutpat quis. Cras pellentesque fringilla enim.Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Aliquam odio dui, ultrices non auctor non, vestibulum vitae diam. Aenean
+        aliquam, ante tincidunt mattis eleifend, urna elit lobortis quam, id vestibulum nisi leo a nunc. Etiam et
+        imperdiet massa. Aliquam in ante a ante ultrices imperdiet. Nullam vulputate rhoncus tellus, vitae varius quam
+        volutpat quis.
+      </div>
+    </div>
+
+    <div class="card card3">
+      <div class="card-head">Skills</div>
+      <div class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam odio dui, ultrices non
+        auctor non, vestibulum vitae diam. Aenean aliquam, ante tincidunt mattis eleifend, urna elit lobortis quam, id
+        vestibulum nisi leo a nunc. Etiam et imperdiet massa. Aliquam in ante a ante ultrices imperdiet. Nullam
+        vulputate rhoncus tellus, vitae varius quam volutpat quis. Cras pellentesque fringilla enim.
+      </div>
+    </div>
+    <!-- FINE CARD -->
+
+    <!-- <h2>
+      Il mio cv
+    </h2>
+    <li>
+        <h3>{{datiCv.propic_path}}</h3>
+        <h3>{{datiCv.name}}</h3>
+        <h3>{{datiCv.surname}}</h3>
+        <h3 style="color: goldenrod;margin-top: 2em;">i miei lavori</h3>
+        <h3 *ngFor="let work of datiCv.prev_works">{{work.job}} {{work.for}}</h3>
+        <h3 style="color: goldenrod;margin-top: 2em;"> i miei strumenti</h3>
+        <h3 *ngFor="let tool of datiCv.tools">{{tool.name}} {{tool.logo}}</h3>
+    </li> -->
+  </div>
 </div>
-
