@@ -15,6 +15,7 @@
   color: #23282b;
   font-weight: 600;
   letter-spacing: 0.10rem;
+  z-index: 0;
 }
 
 a {
