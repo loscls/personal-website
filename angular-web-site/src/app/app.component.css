@@ -1,15 +1,43 @@
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'Roboto Mono', monospace, 'Sofia Sans', sans-serif;
+}
+
+.ontopbg {
+  position: relative;
+  z-index: 1;
 }
 
 .background {
-  background-image: linear-gradient(to right bottom, purple, rgba(0, 0, 0, 0)95% );
-  z-index: -2;
+  background-image: linear-gradient(to right bottom, rgb(128, 0, 128) 5%, rgb(255, 255, 255)55% );
+  background-size: 200% 200%;
+  /* z-index: -2; */
   min-height: 100vh;
+  /* transition: transform 1s ease-in-out; */
+  animation: backgroundZoom 6s ease infinite;
 }
 
-.prova{
+@keyframes backgroundZoom {
+  0% {
+  background-position: 0% 0%;
+  /* background-size: 200% 200%; */
+  /* background-image: linear-gradient(to right bottom, rgb(128, 0, 128) 3%, rgb(245, 246, 243)55% ); */
+  }
+
+  50% {
+   background-position: 75% 0%;
+   /* background-size: 100% 100%; */
+   /* background-image: linear-gradient(to right bottom, rgb(128, 0, 128) 3%, rgb(245, 246, 243)70% ); */
+  }
+
+  100% {
+  background-position: 0% 0%;
+  /* background-size: 200% 200%; */
+  /* background-image: linear-gradient(to right bottom, rgb(128, 0, 128) 3%, rgb(245, 246, 243)55% ); */
+  }
+}
+
+/* .prova{
   width: 100%;
   justify-content: center;
   display: flex;
-}
+} */

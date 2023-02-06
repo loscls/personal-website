@@ -1,10 +1,27 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component,Input, OnInit } from '@angular/core';
 import { SharedService } from '../utils/shared.service';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css'],
+  animations: [
+    trigger('fade', [
+      transition(':enter', [
+        style({opacity: 0}),
+        animate('600ms',
+          style({opacity: 1})
+        )
+      ]),
+      transition(':leave', [
+        style({opacity: 1}),
+        animate('100ms',
+          style({opacity: 0})
+        )
+      ])
+    ])
+  ]
 })
 
 export class SidebarComponent implements OnInit {

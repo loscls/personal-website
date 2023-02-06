@@ -20,5 +20,4 @@ export class HomeComponent implements OnInit {
     toSend.name = "toolbar";
     this.SharedService.sendClickEventToolbar(toSend);
   }
-
 }

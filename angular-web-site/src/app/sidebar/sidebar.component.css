@@ -1,7 +1,11 @@
+* {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .blur{
   width: 0rem;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   min-height: 100vh;
   background: rgba(76, 73, 73, 0.2);
@@ -34,7 +38,7 @@
   width: 25rem;
 }
 
-.sidebarHead {
+.sidebarTop {
   display: flex;
   align-items: center;
   padding: 0.938rem 0.938rem 0 0.938rem;
@@ -58,7 +62,6 @@
 
 .sidebarContent {
   position: relative;
-  align-content: center;
   text-align: center;
 }
 
@@ -70,8 +73,48 @@
   animation-name: hello_propic;
 }
 
-.dati {
+.sidebarContent h3 {
   color: white;
+  font-weight: 500;
+}
+
+.sidebarContent p{
+  color: white;
+  font-weight: 200;
+}
+
+.sidebarContacts {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
+
+.contacts {
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #a7a7a7;
+}
+
+.contacts p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: #333333;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  font-weight: 200;
+}
+
+.contacts:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 @keyframes hello_propic{

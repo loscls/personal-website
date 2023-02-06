@@ -1,3 +1,8 @@
+*{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+}
+
 .spacer {
   flex: 1;
 }
@@ -5,6 +10,7 @@
 .toolbar {
   position: relative;
   margin: 0 40px 0 40px;
+  padding-top: 40px;
   top: 0;
   left: 0;
   right: 0;
