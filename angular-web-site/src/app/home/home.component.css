@@ -25,12 +25,26 @@
 
 }
 
-.intro_h1 {
+.intro > h1 {
   font-family: 'Roboto Mono', monospace;
   color: #222;
+  /* font-size: 4.5rem; PROVA */
   font-size: 71px;
   line-height: 88px;
   font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 0 auto;
+  /* margin-bottom: 24px; */
+  text-align: left;
+}
+
+.intro > h2 {
+  font-family: 'Roboto Mono', monospace;
+  color: #222;
+  /* font-size: 4.5rem; PROVA */
+  font-size: 71px;
+  line-height: 88px;
+  font-weight: 450;
   letter-spacing: -0.02em;
   margin: 0 auto;
   margin-bottom: 24px;
@@ -40,6 +54,7 @@
 .paragraph{
   font-family: 'Roboto Mono', monospace;
   max-width: 740px;
+  /* font-size: 1.15rem; PROVA */
   font-size: 18px;
   line-height: 28px;
   font-weight: 200;
@@ -94,3 +109,16 @@
   padding: 1rem 1.5rem;
 }
 
+
+@media screen and (max-width: 430px) {
+
+  .intro_h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .paragraph {
+    font-size: 18px;
+  }
+
+}
