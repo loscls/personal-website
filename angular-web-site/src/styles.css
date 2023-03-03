@@ -1,3 +1,8 @@
+:root {
+  --font-clr: #171717;
+  --font-color-sidebar: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;

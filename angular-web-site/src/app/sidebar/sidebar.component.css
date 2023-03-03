@@ -13,11 +13,11 @@
   backdrop-filter: blur(5px);
   transition: all .8s ease;
 
-  animation-name: bg_blur;
-  animation-duration: 0.5s;
 }
 
 .on {
+  animation-name: bg_blur;
+  animation-duration: 0.5s;
   width: 100%;
 }
 
@@ -28,15 +28,17 @@
   z-index: 1;
   top: 0;
   width: 0rem;
-  height: 100vh;
+  height: 100%;
   border-radius: .5rem;
   box-shadow: 0.063rem 0 1.25rem 0 #33373d;
 }
 
 .open {
   width: 24rem;
-  margin-top: 10px;
-  margin-left: 10px;
+  margin-top: 0.5%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+  height: 98%;
 }
 
 .sidebarTop {
@@ -49,7 +51,7 @@
 .btnClose {
   margin-left: auto;
   background: transparent;
-  color: #fff;
+  color: var(--font-color-sidebar);
   text-align: center;
   width: 3rem;
   height: 3rem;
@@ -75,12 +77,12 @@
 }
 
 .sidebarContent h3 {
-  color: white;
+  color: var(--font-color-sidebar);
   font-weight: 500;
 }
 
 .sidebarContent p{
-  color: white;
+  color: var(--font-color-sidebar);
   font-weight: 200;
 }
 
@@ -108,7 +110,7 @@
   background-color: #333333;
   border-radius: 50%;
   font-size: 20px;
-  color: white;
+  color: var(--font-color-sidebar);
   border: 1px solid white;
   font-weight: 200;
 }

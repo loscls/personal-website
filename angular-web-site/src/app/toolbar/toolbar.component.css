@@ -1,6 +1,5 @@
 *{
   font-family: 'Roboto Mono', monospace;
-  font-weight: 400;
 }
 
 .spacer {
@@ -9,41 +8,32 @@
 
 .toolbar {
   position: relative;
-  margin: 0 40px 0 40px;
-  padding-top: 40px;
   top: 0;
   left: 0;
   right: 0;
   height: 60px;
   display: flex;
   align-items: center;
-  background-color: #30323300;
-  color: #23282b;
-  font-weight: 600;
+  margin: 0 2.5em;
+  padding-top: 2.5em;
+  background-color: transparent;
+  color: var(--font-clr);
+  font-weight: 200;
   letter-spacing: 0.10rem;
   z-index: 0;
 }
 
 a {
+  color: var(--font-clr);
   text-decoration: none;
 }
 
-a:visited,
-a:active {
-  color: #23282b;
-}
-
 .toolbar img {
-  margin: 0 16px 0 0;
+  margin: 0 1rem 0 0;
 }
 
-.toolbar #github-logo {
-  height: 40px;
-  margin: 0 1px;
-}
-
-.toolbar #github-logo:hover,
 .toolbar #propic:hover {
   background-color: blue;  /* test */
   opacity: 0.8;
+  cursor: pointer;
 }
