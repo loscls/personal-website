@@ -1,0 +1,42 @@
+Check List sito
+
+[x] Sistemare dimensione margini Sidebar
+
+[x] Togliere colore blu ai link non cliccati
+
+[x] Uniformare colori testo
+	[x] Toolbar
+	[x] Sidebar
+	[x] Home
+
+[x] Inserire testi in <p> o <span> etc
+	Controllare card in HOME
+	
+[x] Convertire px in unità responsive
+	- rem per i font-size
+	- em per padding e margin width (relativa al font-size dell'elemento dov'è usato.)
+	[x] style.css
+	[x] app.component.css
+	[x] toolbar.component.css
+	[x] home.component.css
+	[x] sidebar.component.css (contacts p dopo icone)
+	
+[ ] MEDIA QUERY fino 430, 600 e oltre
+	[x] HOME: -600 - fino a 600 card incolonnate
+	[x] HOME: 600+ - card affiancate
+	[x] SIDE: -600 - sidebar tutto schermo
+	[ ] TOOL: -600 - nome scompare
+	[ ] dimensioni font
+
+[ ] Scroll della pagina con Sidebar aperta
+	
+[x] Cambiare posizionamento Card (Due affiancate)
+	- ch come width dei paragrafi utile per impostare quanti 
+	caratteri nella width totale essendo 1ch circa la dimensione del carattere 0	
+	(per leggibilità 75/45 caratteri per linea)
+
+[ ] Icone bottoni sidebar e card skills(o altro modo)
+
+[ ] Trovare uno stile grafico alle Card
+
+[ ] CREARE DEI TESTI
