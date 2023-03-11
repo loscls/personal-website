@@ -40,3 +40,23 @@ Check List sito
 [ ] Trovare uno stile grafico alle Card
 
 [ ] CREARE DEI TESTI
+
+
+checkbox-simone:
+
+cose da fare:
+
+-[ ] INSERIRE FOTO PROFILO
+-[ ] COLLEGARE LINK GITHUB INSTAGRAM E LINKEDIN
+
+problemi da risolvere:
+
+-[ ] più o meno sotto i 415px di larghezza della finestra(da provare nella mod responsive) il colore dello sfondo inizia a spostarsi e a vedersi una banda laterale bianca(es samsung galaxy s8)
+-[ ] selezionando es iphon 12 pro o iphone SE o altri tipi di smartphone con meno di 600px la sidebar diventa a schermo intero coprendo la x con la conseguenza che non può essere chiusa(però fa un movimento molto fluido che mi piace)
+comunque c'è qualcosa di strano nella sidebar e nel blur sotto se si inizia a cambiare tra responsive diversi dispositivi e pc e si apre e si chiude si rompe il blur sotto(cosa che non per forza deve essere risolta dato che un dispositivo mobile non potrebbe davvero fare ciò, però)
+
+
+
+consigli:
+-la sidebar potrebbe venir chiusa anche cliccando fuori da essa e non solo sulla x
+-la sidebar quando apre lo sfondo dovrebbe creare un blur maggiore, o si è rotto come indicato sopra e non lo vedo proprio
