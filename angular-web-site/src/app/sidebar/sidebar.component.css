@@ -8,8 +8,8 @@
   position: fixed;
   z-index: 1;
   min-height: 100vh;
-  background: rgba(76, 73, 73, 0.2);
-  backdrop-filter: blur(5px);
+  background: rgba(55, 55, 55, 0.35);
+  backdrop-filter: blur(10px);
   transition: all .8s ease;
 }
 
@@ -25,10 +25,11 @@
   position: fixed;
   z-index: 1;
   top: 0;
+  bottom: 0px;
   width: 0rem;
   height: 100%;
   border-radius: .5rem;
-  box-shadow: 0.063rem 0 1.25rem 0 #33373d;
+  box-shadow: 0.065rem 0 1.25rem 0 #33373d;
 }
 
 .open {
@@ -43,6 +44,8 @@
   align-items: center;
   padding: 0.938rem 0.938rem 0 0.938rem;
   width: 100%;
+
+  animation: fadeIn 1s;
 }
 
 .btnClose {
@@ -56,19 +59,23 @@
   text-align: center;
   border: none;
   cursor: pointer;
+
+
 }
 
 .sidebarContent {
   position: relative;
   text-align: center;
+
+  animation: fadeIn 1s;
 }
 
 .propic {
   border-radius: 11rem;
   height: 10rem;
   margin-bottom: 10px;
-  animation-duration: 0.5s;
-  animation-name: hello_propic;
+
+  animation: hello_propic 0.5s;
 }
 
 .sidebarContent h3 {
@@ -94,12 +101,41 @@
   display: flex;
   justify-content: center;
   width: 30%;
-  border-radius: 50%;
-  color: #a7a7a7;
+
+  animation: fadeIn 1.5s;
 }
 
-.contacts p {
-  /* VA SISTEMATA DOPO AVER INSERITO LE ICONE */
+
+
+.contacts i {
+  display: flex;
+  align-items: center;
+	justify-content: center;
+  height: 2em;
+	width: 2em;
+  margin: 1.5rem;
+	border-radius: 50%;
+	background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  background-size: 200% auto;
+  font-size: 1.5rem;
+  color: var(--font-color-sidebar);
+	text-align: center;
+	text-transform: uppercase;
+
+	transition: 0.5s;
+}
+
+.contacts i:hover {
+  cursor: pointer;
+  background-position: right center; /* change the direction of the change here */
+  box-shadow: 0 0 20px #ffffff;
+  color: var(--font-color-sidebar);
+  text-decoration: none;
+}
+
+
+/*
+.contacts i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -113,10 +149,10 @@
   font-weight: 200;
 }
 
-.contacts p:hover {
+.contacts i:hover {
   cursor: pointer;
   opacity: 0.8;
-}
+} */
 
 @keyframes hello_propic{
   0%{
@@ -140,10 +176,34 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 1;
+  }
+
+  0%{
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
 
   .open {
     width: 98%;
+  }
+
+  .on {
+    width: 0;
   }
 
   @keyframes hello_propic{
@@ -157,5 +217,30 @@
     }
   }
 
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  /* sidebar centrale */
+
+  .sidebar{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .open {
+    width: 30rem;
+  }
+
+  @keyframes hello_propic{
+    0%{
+      width: 0;
+
+    }
+
+    100%{
+      width: 33%;
+    }
+  }
 
 }

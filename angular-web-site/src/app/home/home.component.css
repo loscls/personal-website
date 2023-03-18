@@ -64,6 +64,7 @@
 
 .card {
   display: flex;
+  width: 50%;
   flex-direction: column;
   border-radius: .5rem;
   background-color: rgba(76, 73, 73, 0.2);
@@ -90,15 +91,40 @@
   padding: 1rem 1.5rem;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  justify-items: center;
+}
 
-@media screen and (max-width: 600px) {
+.grid-item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* .grid-item i {
+  font-size: 4rem;
+} */
+
+.grid-item img {
+  height: 4rem;
+  width: 4rem;
+}
+
+
+@media screen and (max-width: 767px) {
 
   .intro{
     padding-left: 0;
   }
 
   .intro > h1{
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1em;
   }
 
@@ -108,8 +134,12 @@
   }
 
   .paragraph {
-    font-size: 18px;
+    font-size: 1rem;
   }
+
+}
+
+@media screen and (max-width: 1023px)  {
 
   .content {
     flex-direction: column;

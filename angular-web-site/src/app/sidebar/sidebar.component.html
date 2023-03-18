@@ -1,34 +1,36 @@
 <div class="blur" [ngClass]="blur"></div>
 
 <div class="sidebar" [ngClass]="status">
-  <div class="sidebarTop" @fade *ngIf="status == 'open'">
-    <Button class="btnClose"@fade *ngIf="status == 'open'" (click)="onClick()">✖</Button>
+  <div class="sidebarTop" *ngIf="status == 'open'">
+    <Button class="btnClose" *ngIf="status == 'open'" (click)="onClick()">✖</Button>
   </div>
 
 
-  <div class="sidebarContent" @fade *ngIf="status == 'open'">
-    <img class="propic" @fade *ngIf="status == 'open'" src={{datiCv.propic_path}}>
+  <div class="sidebarContent" *ngIf="status == 'open'">
+    <img class="propic" *ngIf="status == 'open'" src={{datiCv.propic_path}}>
 
-    <h3 class="dati" @fade>{{datiCv.name}} {{datiCv.surname}}</h3>
+    <h3 class="dati">{{datiCv.name}} {{datiCv.surname}}</h3>
 
     <hr style="margin: 10px 30px 10px 30px;">
 
-    <p class="dati" @fade style="margin-bottom: 10px;">{{datiCv.birth_date}}</p> <!-- aggiungere bottoni -->
-    <p class="dati" @fade style="margin-bottom: 10px;">{{datiCv.email}}</p>
-    <p class="dati" @fade style="margin-bottom: 10px;">{{datiCv.github}}</p>
+    <p class="dati" style="margin-bottom: 10px;">{{datiCv.birth_date}}</p> <!-- aggiungere bottoni -->
+    <p class="dati" style="margin-bottom: 10px;">{{datiCv.email}}</p>
+    <p class="dati" style="margin-bottom: 10px;">{{datiCv.github}}</p>
 
     <hr style="margin: 10px 30px 10px 30px;">
   </div>
 
-  <div class="sidebarContacts" @fade *ngIf="status == 'open'">
-    <div class="contacts" @fade>
-      <p>L</p>
+  <div class="sidebarContacts" *ngIf="status == 'open'">
+    <div class="contacts">
+      <i class="devicon-linkedin-plain"></i>
     </div>
-    <div class="contacts" @fade>
+
+    <div class="contacts">
       <p>T</p>
     </div>
-    <div class="contacts" @fade>
-      <p>G</p>
+
+    <div class="contacts">
+      <i class="devicon-github-original"></i>
     </div>
   </div>
 

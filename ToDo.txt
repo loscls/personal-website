@@ -21,23 +21,28 @@ Check List sito
 	[x] home.component.css
 	[x] sidebar.component.css (contacts p dopo icone)
 	
-[ ] MEDIA QUERY fino 430, 600 e oltre
-	[x] HOME: -600 - fino a 600 card incolonnate
-	[x] HOME: 600+ - card affiancate
-	[x] SIDE: -600 - sidebar tutto schermo
-	[ ] TOOL: -600 - nome scompare
-	[ ] dimensioni font
+[x] MEDIA QUERY:
+	[x] media query max 767 SMARTPHONE
+	[x] media query max 1023 TABLET
+	[x] oltre sito normale DESKTOP
 
+	[x] HOME: -1023 - fino a 600 card incolonnate
+	[x] HOME: 1023+ - card affiancate
+	[x] SIDE: -767 - sidebar tutto schermo
+	[x] SIDE: 767+ -1023 - sidebar centrale 
+	[x] dimensioni font
+	
+	
 [ ] Scroll della pagina con Sidebar aperta
+
+[x] portare le animazione in css
 	
 [x] Cambiare posizionamento Card (Due affiancate)
-	- ch come width dei paragrafi utile per impostare quanti 
-	caratteri nella width totale essendo 1ch circa la dimensione del carattere 0	
-	(per leggibilità 75/45 caratteri per linea)
+	- ch come width dei paragrafi utile per impostare quanti caratteri nella width totale essendo 1ch circa la dimensione del carattere 0 (per leggibilità 75/45 caratteri per linea)
 
-[ ] Icone bottoni sidebar e card skills(o altro modo)
+[x] Icone bottoni sidebar e card skills(o altro modo)
 
-[ ] Trovare uno stile grafico alle Card
+[x] Trovare uno stile grafico alle Card
 
 [ ] CREARE DEI TESTI
 
@@ -51,8 +56,8 @@ cose da fare:
 
 problemi da risolvere:
 
--[ ] più o meno sotto i 415px di larghezza della finestra(da provare nella mod responsive) il colore dello sfondo inizia a spostarsi e a vedersi una banda laterale bianca(es samsung galaxy s8)
--[ ] selezionando es iphon 12 pro o iphone SE o altri tipi di smartphone con meno di 600px la sidebar diventa a schermo intero coprendo la x con la conseguenza che non può essere chiusa(però fa un movimento molto fluido che mi piace)
+-[x] più o meno sotto i 415px di larghezza della finestra(da provare nella mod responsive) il colore dello sfondo inizia a spostarsi e a vedersi una banda laterale bianca(es samsung galaxy s8)
+-[x] selezionando es iphon 12 pro o iphone SE o altri tipi di smartphone con meno di 600px la sidebar diventa a schermo intero coprendo la x con la conseguenza che non può essere chiusa(però fa un movimento molto fluido che mi piace)
 comunque c'è qualcosa di strano nella sidebar e nel blur sotto se si inizia a cambiare tra responsive diversi dispositivi e pc e si apre e si chiude si rompe il blur sotto(cosa che non per forza deve essere risolta dato che un dispositivo mobile non potrebbe davvero fare ciò, però)
 
 
