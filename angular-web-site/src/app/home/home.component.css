@@ -13,7 +13,6 @@
 .intro {
   position: relative;
   display: block;
-  /* width: 100%; */ /*NON SERVE*/
   max-width: 64rem; /* 1024px */
   margin: 0 auto;
   padding-left: 2.5rem;
@@ -25,11 +24,11 @@
   /* font-family: 'Roboto Mono', monospace; */
   font-family: 'Climate Crisis', cursive;
   font-size: 4.5rem; /* 72px */
+  font-style: oblique;
   /* font-weight: 500; */
   font-weight: lighter;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  /* margin-bottom: 24px; */
   text-align: left;
 }
 
@@ -55,7 +54,6 @@
   position: relative;
   display: flex;
   /* text-align: center; */
-  /* width: 100%; */ /*NON SERVE*/
   max-width: 64rem; /* 1024px */
   margin-left: auto;
   margin-right: auto;
@@ -105,11 +103,6 @@
   align-items: center;
 }
 
-
-
-/* .grid-item i {
-  font-size: 4rem;
-} */
 
 .grid-item img {
   height: 4rem;

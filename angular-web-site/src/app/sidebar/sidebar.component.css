@@ -2,6 +2,11 @@
   font-family: 'Roboto Mono', monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 .blur{
   width: 0rem;
   height: 100vh;
@@ -52,15 +57,17 @@
   margin-left: auto;
   background: transparent;
   color: var(--font-color-sidebar);
-  font-size: 1.5rem; /* 24px */
-  width: 2em;  /* 48px */
-  height: 2em; /* 48px */
+  font-size: 2rem; /* 32px */
+  width: 3rem;  /* 48px */
+  height: 3rem; /* 48px */
   font-weight: 500;
   text-align: center;
   border: none;
   cursor: pointer;
+}
 
-
+.btnClose:active{
+  font-size: 1rem;
 }
 
 .sidebarContent {
@@ -94,7 +101,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* gap: 4rem; */
 }
 
 .contacts {
@@ -120,39 +126,18 @@
   font-size: 1.5rem;
   color: var(--font-color-sidebar);
 	text-align: center;
-	text-transform: uppercase;
 
 	transition: 0.5s;
 }
 
-.contacts i:hover {
+.contacts i:hover,
+.contacts i:focus  {
   cursor: pointer;
   background-position: right center; /* change the direction of the change here */
   box-shadow: 0 0 20px #ffffff;
   color: var(--font-color-sidebar);
   text-decoration: none;
 }
-
-
-/*
-.contacts i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.5rem;
-  width: 2.5rem;
-  background-color: #333333;
-  border-radius: 50%;
-  font-size: 20px;
-  color: var(--font-color-sidebar);
-  border: 1px solid white;
-  font-weight: 200;
-}
-
-.contacts i:hover {
-  cursor: pointer;
-  opacity: 0.8;
-} */
 
 @keyframes hello_propic{
   0%{

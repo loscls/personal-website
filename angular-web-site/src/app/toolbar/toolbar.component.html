@@ -1,13 +1,10 @@
 <div class="toolbar" role="banner">
-  <img id="propic"
-    width="40"
-    alt="Angular Logo"
-    src="{{datiCv.propic_path}}"
-    (click)="onClick()"
+  <div class="propic-container" (click)="onClick()">
+    <img id="propic"
+      width="40"
+      alt="propic-Lorenzo"
+      src="{{datiCv.propic_path}}"
     />
-  <span>{{datiCv.name}} {{datiCv.surname}}</span>
-    <!-- <div class="spacer"></div>
-      <a aria-label="github" target="_blank" rel="noopener" href="https://github.com/" title="Github">
-        <span>Github</span>
-    </a> -->
+  </div>
+  <span>Lorenzo Scalise</span>
 </div>
