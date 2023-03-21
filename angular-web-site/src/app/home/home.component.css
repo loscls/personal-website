@@ -13,7 +13,7 @@
 .intro {
   position: relative;
   display: block;
-  max-width: 64rem; /* 1024px */
+  max-width: 70rem;
   margin: 0 auto;
   padding-left: 2.5rem;
   padding-bottom: 2.5rem; /* 40px */
@@ -34,11 +34,11 @@
 
 .intro > h2 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 4rem; /* 64px */
+  font-size: 3rem;
   font-weight: 300;
   letter-spacing: 0.02em;
   margin: 0 auto;
-  margin-bottom: 1.5rem; /* 24px*/
+  margin-bottom: 1.5rem;
   text-align: left;
 }
 
@@ -48,13 +48,13 @@
   font-size: 1.15rem;
   line-height: 1.5;
   font-weight: 200;
+  letter-spacing: 0.25rem;
 }
 
 .content {
   position: relative;
   display: flex;
-  /* text-align: center; */
-  max-width: 64rem; /* 1024px */
+  max-width: 70em; /* 1024px */
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
@@ -63,19 +63,14 @@
 .card {
   display: flex;
   width: 50%;
-  flex-direction: column;
-  border-radius: .5rem;
-  background-color: rgba(76, 73, 73, 0.2);
   margin: 1.25rem;
-  box-shadow: 0 .10rem .5rem;
   padding: 1rem 1.5rem;
   text-align: left;
-  backdrop-filter: blur(5px);
 }
 
 .card-head {
   padding: 1rem 1.5rem;
-  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
@@ -92,8 +87,8 @@
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-row-gap: 2rem;
-  grid-column-gap: 2rem;
+  grid-row-gap: 7.5rem;
+  grid-column-gap: 7rem;
   justify-items: center;
 }
 
@@ -130,6 +125,19 @@
     font-size: 1rem;
   }
 
+  .card {
+    flex-direction: column;
+  }
+
+  .card-head {
+    border-bottom: 1px solid #000;
+    border-right: none;
+  }
+
+  .grid-container {
+    grid-column-gap: 4rem;
+  }
+
 }
 
 @media screen and (max-width: 1023px)  {
@@ -141,6 +149,10 @@
   .card {
     width: 100%;
     margin: 1.25rem 0;
+  }
+
+  .skills .card-head{
+    padding-right: 3.8rem;
   }
 
 }

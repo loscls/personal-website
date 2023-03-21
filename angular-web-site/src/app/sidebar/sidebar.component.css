@@ -6,6 +6,15 @@ a {
   text-decoration: none;
 }
 
+hr {
+  margin: 10px 30px;
+}
+
+.about-me {
+  margin-bottom: 10px;
+  padding: 0 2rem;
+}
+
 
 .blur{
   width: 0rem;
@@ -111,8 +120,6 @@ a {
   animation: fadeIn 1.5s;
 }
 
-
-
 .contacts i {
   display: flex;
   align-items: center;
@@ -185,6 +192,7 @@ a {
 
   .open {
     width: 98%;
+    margin-top: 2%;
   }
 
   .on {
@@ -215,6 +223,7 @@ a {
 
   .open {
     width: 30rem;
+    margin-top: 1.5%;
   }
 
   @keyframes hello_propic{
