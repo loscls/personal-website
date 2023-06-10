@@ -44,15 +44,15 @@ Check List sito
 
 [x] Trovare uno stile grafico alle Card
 
-[ ] CREARE DEI TESTI
+[x] CREARE DEI TESTI
 
 
 checkbox-simone:
 
 cose da fare:
 
--[ ] INSERIRE FOTO PROFILO
--[ ] COLLEGARE LINK GITHUB INSTAGRAM E LINKEDIN
+-[x] INSERIRE FOTO PROFILO
+-[x] COLLEGARE LINK GITHUB INSTAGRAM E LINKEDIN
 
 problemi da risolvere:
 

@@ -9,15 +9,18 @@ import { SharedService } from '../utils/shared.service';
 export class ToolbarComponent implements OnInit {
   @Input() datiCv: any;
 
-  constructor(private SharedService:SharedService) { }
+  constructor(private SharedService: SharedService) { }
 
   ngOnInit(): void {
   }
 
   onClick() {
-    let toSend:any={};
+    let toSend: any = {};
     toSend.name = "toolbar";
     this.SharedService.sendClickEventToolbar(toSend);
+    let bodyElemnt = document.querySelector("body");
+    if (bodyElemnt)
+      bodyElemnt.style.overflow = "hidden";
   }
 
 }

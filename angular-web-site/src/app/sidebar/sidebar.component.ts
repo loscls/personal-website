@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component,Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { SharedService } from '../utils/shared.service';
 
 @Component({
@@ -27,14 +27,14 @@ import { SharedService } from '../utils/shared.service';
 export class SidebarComponent implements OnInit {
   @Input() datiCv: any;
 
-  status:string = "close";
-  blur:string = "off"
+  status: string = "close";
+  blur: string = "off"
 
 
-  constructor(private SharedService:SharedService) {
+  constructor(private SharedService: SharedService) {
 
-    this.SharedService.getClickEventSidebar().subscribe((value)=>{
-      console.log("il click arriva da:" +value.name);
+    this.SharedService.getClickEventSidebar().subscribe((value) => {
+      console.log("il click arriva da:" + value.name);
       this.openCloseEvent();
     })
 
@@ -45,24 +45,28 @@ export class SidebarComponent implements OnInit {
 
 
   //semplicemente cambio la variabile dell'ngclass quindi assegno la classe open di cui ho definito il css
-  openCloseEvent():void{
-    if(this.status=="close"){
-      this.status="open";
-      this.blur="on";
+  openCloseEvent(): void {
+    if (this.status == "close") {
+      this.status = "open";
+      this.blur = "on";
       console.log(this.status);
-    } else if(this.status=="open"){
-      this.status="close";
-      this.blur="off"
+    } else if (this.status == "open") {
+      this.status = "close";
+      this.blur = "off"
       console.log(this.status);
     }
   }
 
   //se volessi passare parametri potrei fare come mostrato, creo un dizionario "{}" e gli passo tutti i parametri che voglio
   //in questo caso passo .name quindi potrei prendermi dall'altra parte il nome del componente cliccato
-  onClick():void{
-    let toSend:any={};
-    toSend.name="sidebar"
+  onClick(): void {
+    let toSend: any = {};
+    toSend.name = "sidebar"
     this.SharedService.sendClickEventSidebar(toSend);
+
+    const bodyElement = document.querySelector("body");
+    if (bodyElement)
+      bodyElement.style.overflow = "auto";
   }
 
 
